@@ -138,3 +138,30 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+// Email JS
+(function () {
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init("YzHShxw4xd3WcvElf");
+})();
+
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      this.contact_number.value = (Math.random() * 100000) | 0;
+      // these IDs from the previous steps
+      emailjs.sendForm("service_u1zj7ne", "template_6eir8od", this).then(
+        function () {
+          console.log("SUCCESS!");
+          alert("전송이 완료되었습니다");
+          location.reload();
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+    });
+};
