@@ -41,7 +41,7 @@
 
   --bg-gradient-yellow-2: linear-gradient(
       135deg,
-      hsla(45, 100%, 71%, 0.251) 0%,
+      hsla(236, 72%, 80%, 0.251) 0%,
       hsla(35, 100%, 68%, 0) 59.86%
     ),
     hsl(240, 2%, 13%);
@@ -66,7 +66,7 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(219, 100%, 72%);
+  --orange-yellow-crayola: hsl(239, 88%, 68%);
   --vegas-gold: hsl(239, 88%, 68%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsl(0, 0%, 84%, 0.7);
